@@ -1,0 +1,46 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form */
+.form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #185a9d;
+  color: white;
+  border: none;
+}
