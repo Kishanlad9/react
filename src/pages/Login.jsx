@@ -13,7 +13,7 @@ const Login = () => {
       console.log(value);
     },
   });
-  console.log("Page render");
+  
   return (
     <div className="w-full h-screen flex justify-center items-center">
       <form
@@ -21,7 +21,7 @@ const Login = () => {
         onSubmit={formik.handleSubmit}
       >
         <h2 className="text-2xl font-bold mb-9 text-center text-gray-800">
-          Login
+          Login Page
         </h2>
         <div
           className={`flex items-center mt-5 border bg-indigo-500/5 border-gray-500/10 rounded gap-1 pl-2 ${formik.touched.email && formik.errors.email ? "invalid: border-red-500" : ""} `}
@@ -53,7 +53,7 @@ const Login = () => {
             className={`w-full outline-none bg-transparent py-2.5 ${formik.touched.email && formik.errors.email ? "invalid:text-red-500" : ""}`}
             name="email"
             type="email"
-            placeholder="Email"
+            placeholder="Enter Email"
             onChange={formik.handleChange}
             value={formik.values.email}
           />
@@ -81,7 +81,7 @@ const Login = () => {
             className="w-full outline-none bg-transparent py-2.5"
             name="password"
             type="password"
-            placeholder="Password"
+            placeholder="Enter Password"
             value={formik.values.password}
             onChange={formik.handleChange}
           />
@@ -102,7 +102,7 @@ const Login = () => {
           type="submit"
           className="w-full mb-3 bg-indigo-500 hover:bg-indigo-600/90 transition py-2.5 rounded text-white font-medium"
         >
-          Log In
+          Sign In
         </button>
         <p className="text-center mt-4">
           Don't have an account?
